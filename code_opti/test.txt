@@ -1,0 +1,5 @@
+var age = 17 ;
+if age == 12 ;
+print age ;
+print "HELLO"
+
