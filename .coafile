@@ -1,1 +1,18 @@
-#add coala info here.
+[all]
+files = loop_unroll/**.py, tokenization/*.py, cse/**.py
+max_line_length = 80
+use_spaces = True
+
+[all.invalidlinks]
+bears = InvalidLinkBear
+
+[all.text]
+bears = SpaceConsistencyBear
+
+[all.markdown]
+bears = MarkdownBear
+
+[all.whitespace]
+use_spaces = True
+bears = SpaceConsistencyBear
+default_actions = *: ApplyPatchAction

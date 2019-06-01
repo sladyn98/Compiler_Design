@@ -22,8 +22,8 @@ def tokenize(contents):
                 tokens.append(["IDENTIFIER",word])
 
         elif re.match('[0-9]',word):
-            tokens.append(["INTEGER",word])
-
+            tokens.append(["INTEGER",word]) 
+        
         elif word in "-/=*":
             tokens.append(["OPERATOR",word])
 
@@ -34,5 +34,5 @@ def main():
     with open('test.txt','r') as file:
         contents = file.read()
         tokenize(contents)
-
+        
 main()

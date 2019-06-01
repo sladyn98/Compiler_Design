@@ -26,7 +26,7 @@ def remove_dead_code(code_list):
                 code_list.remove(values)
                 replace_dict[values[0]] = rhs[0]
                 break
-
+    
     replace_sub_expression(code_list,replace_dict)
 
 """replace the repeating expression with its first occurence"""
